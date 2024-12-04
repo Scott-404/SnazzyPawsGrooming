@@ -5,6 +5,20 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Contact - Snazzy Paws Grooming</title>
     <link rel="stylesheet" href="css/styles.css">
+    <style>
+        .contact-container {
+            display: flex;
+            flex-direction: row;
+            align-items: flex-start;
+            gap: 20px;
+        }
+        .contact-container iframe {
+            flex: 1 1 300px; /* Adjust the size of the map */
+        }
+        .contact-info {
+            flex: 2 1 500px; /* Adjust the size of the contact information section */
+        }
+    </style>
 </head>
 <body>
     <header>
@@ -19,17 +33,16 @@
             <li><a href="contact.html">Contact</a></li>
         </ul>
     </nav>
-    <section>
-        <h2>Our Location</h2>
-        <iframe width="600" height="450" style="border:0;" 
+    <section class="contact-container">
+        <iframe width="300" height="300" style="border:0;" 
             src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3153.933979736233!2d175.04966031531694!3d-37.75963327976367!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6d0d47a0a6eae9b9%3A0xa8c6b14a731a507b!2sAuckland%2C%20New%20Zealand!5e0!3m2!1sen!2snz!4v1619123225630!5m2!1sen!2snz" allowfullscreen="" loading="lazy"></iframe>
-    </section>
-    <section>
-        <h2>Contact Information</h2>
-        <p>You can reach us at:</p>
-        <p><strong>Address:</strong> 123 Grooming St, Hamilton, New Zealand</p>
-        <p><strong>Phone:</strong> +64 9 123 4567</p>
-        <p><strong>Email:</strong> contact@snazzypaws.com</p>
+        <div class="contact-info">
+            <h2>Contact Information</h2>
+            <p>You can reach us at:</p>
+            <p><strong>Address:</strong> 123 Grooming St, Hamilton, New Zealand</p>
+            <p><strong>Phone:</strong> +64 9 123 4567</p>
+            <p><strong>Email:</strong> contact@snazzypaws.com</p>
+        </div>
     </section>
     <section>
         <h2>Contact Form</h2>
