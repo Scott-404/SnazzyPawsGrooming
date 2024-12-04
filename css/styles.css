@@ -6,6 +6,13 @@ body {
     background-color: #f8f8f8;
 }
 
+/* Apply box-sizing to all elements */
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
 header, footer {
     background-color: #333;
     color: white;
@@ -28,6 +35,11 @@ nav ul li {
 nav ul li a {
     color: white;
     text-decoration: none;
+}
+
+/* Add hover effect for navigation links */
+nav ul li a:hover {
+    background-color: #555;
 }
 
 section {
@@ -62,6 +74,12 @@ form input, form textarea, form button {
     margin-bottom: 1em;
 }
 
+/* Style buttons with hover effects */
+form button:hover {
+    background-color: #333;
+    color: #fff;
+}
+
 .grid-container {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
@@ -87,4 +105,20 @@ form input, form textarea, form button {
     height: auto; /* Maintain aspect ratio */
     display: block;
     margin: auto;
+}
+
+/* Responsive styles for smaller screens */
+@media (max-width: 768px) {
+    nav ul li {
+        display: block;
+        margin: 1em 0;
+    }
+    
+    .grid-container {
+        grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+    }
+    
+    section {
+        padding: 1em;
+    }
 }
