@@ -3,31 +3,55 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Welcome to Snazzy Paws Grooming! We provide professional dog grooming services in Hamilton.">
     <title>Snazzy Paws Grooming</title>
-    <link rel="stylesheet" href="css/styles.css">
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/styles.css" rel="stylesheet">
 </head>
 <body>
-    <header>
-        <h1>Snazzy Paws Grooming</h1>
-        <p>Professional Dog Grooming Services in Hamilton</p>
-    </header>
-    <nav>
-        <ul>
-            <li><a href="index.html">Home</a></li>
-            <li><a href="services.html">Services</a></li>
-            <li><a href="gallery.html">Gallery</a></li>
-            <li><a href="booking.html">Booking</a></li>
-            <li><a href="contact.html">Contact</a></li>
-        </ul>
-    </nav>
-    <section>
-        <h2>Welcome</h2> 
-        <img src="images/banner.jpg" alt="Snazzy Paws Grooming" class="banner-image">
-        <p>Welcome to Snazzy Paws Grooming! We offer top-notch grooming services for your beloved pets. Our experienced groomers are passionate about dogs and dedicated to providing the best care possible. Whether your pet needs a simple bath and brush or a complete grooming package, we've got you covered.</p>
-        <p>We are open from Monday to Saturday, from 9 am to 5 pm. Book your appointment today and give your pet the pampering they deserve!</p>
-    </section>
-    <footer>
-        <p>Snazzy Paws Grooming | 123 Grooming St, Hamilton, New Zealand | Open Monday to Saturday, 9 am to 5 pm | Phone: +64 9 123 4567 | Email: contact@snazzypaws.com</p>
-    </footer>
+    <div class="container mt-5">
+        <header class="text-center">
+            <h1>Snazzy Paws Grooming</h1>
+            <p>Professional Dog Grooming Services in Hamilton</p>
+        </header>
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <a class="navbar-brand" href="#">Snazzy Paws Grooming</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="services.html">Services</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="gallery.html">Gallery</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="booking.html">Booking</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="contact.html">Contact</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+        <section>
+            <h2>Welcome</h2>
+            <img src="images/banner.jpg" alt="Snazzy Paws Grooming" class="banner-image img-fluid">
+            <p>Welcome to Snazzy Paws Grooming! We offer top-notch grooming services for your beloved pets. Our experienced groomers are passionate about dogs and dedicated to providing the best care possible. Whether your pet needs a simple bath and brush or a complete grooming package, we've got you covered.</p>
+            <p>We are open from Monday to Saturday, from 9 am to 5 pm. Book your appointment today and give your pet the pampering they deserve!</p>
+        </section>
+        <footer class="text-center mt-5">
+            <p>Snazzy Paws Grooming | 123 Grooming St, Hamilton, New Zealand | Open Monday to Saturday, 9 am to 5 pm | Phone: +64 9 123 4567 | Email: contact@snazzypaws.com</p>
+        </footer>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@1.16.1/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.herokuapp.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 </body>
 </html>
