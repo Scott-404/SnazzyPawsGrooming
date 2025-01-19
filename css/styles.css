@@ -84,25 +84,31 @@ form button:hover {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     gap: 1em;
+    padding: 2em 1em; /* Add some padding to all container elements for spacing */
 }
 
 .grid-item img {
     width: 100%;
-    max-width: 150px; /* Ensures the width is consistent */
-    height: 150px; /* Sets a consistent height */
-    object-fit: cover; /* Ensures the image covers the area without stretching */
-    border: 1px solid #ddd; /* Adds a border for styling */
-    border-radius: 5px; /* Adds border radius for rounded corners */
+    height: 150px;
+    object-fit: cover;
+    border: 1px solid #ddd;
+    border-radius: 5px;
     display: block;
     margin: auto;
 }
 
+img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 5px; /* Ensure all images are responsive and contain rounded borders */
+}
+
 /* Specific style for the banner image */
 .banner-image {
-    max-width: 100%; /* Ensure the image does not exceed the width of the container */
-    max-height: 300px; /* Set a maximum height */
-    width: auto; /* Maintain aspect ratio */
-    height: auto; /* Maintain aspect ratio */
+    max-width: 100%;
+    max-height: 300px;
+    width: auto;
+    height: auto;
     display: block;
     margin: auto;
 }
