@@ -3,7 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Contact Snazzy Paws Grooming for professional dog grooming services in Hamilton.">
     <title>Contact - Snazzy Paws Grooming</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
     <link rel="stylesheet" href="css/styles.css">
     <style>
         .contact-container {
@@ -21,43 +23,65 @@
     </style>
 </head>
 <body>
-    <header>
-        <h1>Contact Us</h1>
-    </header>
-    <nav>
-        <ul>
-            <li><a href="index.html">Home</a></li>
-            <li><a href="services.html">Services</a></li>
-            <li><a href="gallery.html">Gallery</a></li>
-            <li><a href="booking.html">Booking</a></li>
-            <li><a href="contact.html">Contact</a></li>
-        </ul>
-    </nav>
-    <section class="contact-container">
-        <iframe width="300" height="300" style="border:0;" 
-            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3153.933979736233!2d175.04966031531694!3d-37.75963327976367!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6d0d47a0a6eae9b9%3A0xa8c6b14a731a507b!2sAuckland%2C%20New%20Zealand!5e0!3m2!1sen!2snz!4v1619123225630!5m2!1sen!2snz" allowfullscreen="" loading="lazy"></iframe>
-        <div class="contact-info">
-            <h2>Contact Information</h2>
-            <p>You can reach us at:</p>
-            <p><strong>Address:</strong> 123 Grooming St, Hamilton, New Zealand</p>
-            <p><strong>Phone:</strong> +64 9 123 4567</p>
-            <p><strong>Email:</strong> contact@snazzypaws.com</p>
-        </div>
-    </section>
-    <section>
-        <h2>Contact Form</h2>
-        <form>
-            <label for="name">Name:</label>
-            <input type="text" id="name" name="name" required><br>
-            <label for="email">Email:</label>
-            <input type="email" id="email" name="email" required><br>
-            <label for="message">Message:</label>
-            <textarea id="message" name="message" required></textarea><br>
-            <button type="submit">Send</button>
-        </form>
-    </section>
-    <footer>
-        <p>Snazzy Paws Grooming | 123 Grooming St, Hamilton, New Zealand | Open Monday to Saturday, 9 am to 5 pm | Phone: +64 9 123 4567 | Email: contact@snazzypaws.com</p>
-    </footer>
+    <div class="container mt-5">
+        <header class="text-center">
+            <h1>Contact Us</h1>
+        </header>
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <a class="navbar-brand" href="#">Snazzy Paws Grooming</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="services.html">Services</a></li>
+                    <li class="nav-item"><a class="nav-link" href="gallery.html">Gallery</a></li>
+                    <li class="nav-item"><a class="nav-link" href="booking.html">Booking</a></li>
+                    <li class="nav-item active"><a class="nav-link" href="contact.html">Contact <span class="sr-only">(current)</span></a></li>
+                </ul>
+            </div>
+        </nav>
+        <section class="contact-container row">
+            <div class="col-md-6">
+                <iframe width="100%" height="300" style="border:0;" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3153.933979736233!2d175.04966031531694!3d-37.75963327976367!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6d0d47a0a6eae9b9%3A0xa8c6b14a731a507b!2sAuckland%2C%20New%20Zealand!5e0!3m2!1sen!2snz!4v1619123225630!5m2!1sen!2snz" allowfullscreen="" loading="lazy"></iframe>
+            </div>
+            <div class="col-md-6 contact-info">
+                <h2>Contact Information</h2>
+                <p>You can reach us at:</p>
+                <p><strong>Address:</strong> 123 Grooming St, Hamilton, New Zealand</p>
+                <p><strong>Phone:</strong> +64 9 123 4567</p>
+                <p><strong>Email:</strong> contact@snazzypaws.com</p>
+            </div>
+        </section>
+        <section>
+            <h2 class="text-center">Contact Form</h2>
+            <form id="contactForm">
+                <div class="form-group">
+                    <label for="name">Name:</label>
+                    <input type="text" class="form-control" id="name" name="name" required>
+                </div>
+                <div class="form-group">
+                    <label for="email">Email:</label>
+                    <input type="email" class="form-control" id="email" name="email" required>
+                </div>
+                <div class="form-group">
+                    <label for="message">Message:</label>
+                    <textarea class="form-control" id="message" name="message" required></textarea>
+                </div>
+                <button type="submit" class="btn btn-primary">Send</button>
+            </form>
+            <div id="contactConfirmation" style="display:none;">
+                <p>Thank you for contacting us! We'll get back to you soon.</p>
+            </div>
+        </section>
+        <footer class="text-center mt-5">
+            <p>Snazzy Paws Grooming | 123 Grooming St, Hamilton, New Zealand | Open Monday to Saturday, 9 am to 5 pm | Phone: +64 9 123 4567 | Email: contact@snazzypaws.com</p>
+        </footer>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@1.16.1/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.herokuapp.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 </body>
 </html>
