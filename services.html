@@ -3,44 +3,68 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Discover the range of grooming services offered by Snazzy Paws Grooming. From baths to special-breed cuts, we have it all.">
     <title>Services - Snazzy Paws Grooming</title>
-    <link rel="stylesheet" href="css/styles.css">
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/styles.css" rel="stylesheet">
 </head>
 <body>
-    <header>
-        <h1>Services</h1>
-    </header>
-    <nav>
-        <ul>
-            <li><a href="index.html">Home</a></li>
-            <li><a href="services.html">Services</a></li>
-            <li><a href="gallery.html">Gallery</a></li>
-            <li><a href="booking.html">Booking</a></li>
-            <li><a href="contact.html">Contact</a></li>
-        </ul>
-    </nav>
-    <section>
-        <h2>Our Services</h2>
-        <p>We offer a variety of grooming services to keep your pet looking and feeling great. Our services include:</p>
-        <ul>
-            <li>Bath and brush: $25–$50</li>
-            <li>Haircut: $45–$85</li>
-            <li>Nail trim: $10–$20</li>
-            <li>Ear cleaning: $10–$15</li>
-            <li>Teeth brushing: $10–$15</li>
-            <li>De-shedding treatment: $20–$40 in addition to bath or haircut</li>
-            <li>Flea and tick treatment: $15–$30</li>
-            <li>Spa package: $75–$150</li>
-            <li>Express service: $15–$25</li>
-            <li>Medicated bath: $20–$40</li>
-            <li>Special-breed cuts: Price varies and is often quoted after consultation</li>
-            <li>Puppy package: $30–$60</li>
-            <li>Senior dog package: $40–$80</li>
-            <li>Full grooming package: $60–$120</li>
-        </ul>
-    </section>
-    <footer>
-        <p>Snazzy Paws Grooming | Open Monday to Saturday, 9 am to 5 pm</p>
-    </footer>
+    <div class="container mt-5">
+        <header class="text-center">
+            <h1>Services</h1>
+        </header>
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <a class="navbar-brand" href="#">Snazzy Paws Grooming</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item active">
+                        <a class="nav-link" href="services.html">Services <span class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="gallery.html">Gallery</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="booking.html">Booking</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="contact.html">Contact</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+        <section>
+            <h2 class="text-center">Our Services</h2>
+            <p>We offer a variety of grooming services to keep your pet looking and feeling great. Our services include:</p>
+            <ul class="list-group">
+                <li class="list-group-item">Bath and brush: $25–$50</li>
+                <li class="list-group-item">Haircut: $45–$85</li>
+                <li class="list-group-item">Nail trim: $10–$20</li>
+                <li class="list-group-item">Ear cleaning: $10–$15</li>
+                <li class="list-group-item">Teeth brushing: $10–$15</li>
+                <li class="list-group-item">De-shedding treatment: $20–$40 in addition to bath or haircut</li>
+                <li class="list-group-item">Flea and tick treatment: $15–$30</li>
+                <li class="list-group-item">Spa package: $75–$150</li>
+                <li class="list-group-item">Express service: $15–$25</li>
+                <li class="list-group-item">Medicated bath: $20–$40</li>
+                <li class="list-group-item">Special-breed cuts: Price varies and is determined after consultation</li>
+                <li class="list-group-item">Puppy package: $30–$60</li>
+                <li class="list-group-item">Senior dog package: $40–$80</li>
+                <li class="list-group-item">Full grooming package: $60–$120</li>
+            </ul>
+        </section>
+        <footer class="text-center mt-5">
+            <p>Snazzy Paws Grooming | Open Monday to Saturday, 9 am to 5 pm</p>
+        </footer>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@1.16.1/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.herokuapp.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 </body>
 </html>
